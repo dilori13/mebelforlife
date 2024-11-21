@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Мебель для жизни - Диван "Море"</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+.product-details {
+  display: flex; /* Размещаем изображение и описание рядом */
+  gap: 20px; /* Расстояние между изображением и описанием */
+}
+.product-image {
+  width: 300px; /* Ширина изображения */
+}
+.product-image img {
+  max-width: 100%; /* Изображение не должно выходить за рамки */
+  height: auto; /* Сохраняем пропорции изображения */
+}
+</style>
+</head>
+<body>
+
+<h1>Диван "Море"</h1>
+
+<div class="product-details">
+  <div class="product-image">
+    <img src="sofa.jpg" alt="">
+  </div>
+  <div>
+    <h2>Характеристики</h2>
+    <ul>
+      <li>Материал: Дерево, ткань</li>
+      <li>Цвет: Синий</li>
+      <li>Размеры: 70x80x90 см</li>
+      <li>Вес: 15 кг</li>
+    </ul>
+
+    <h2>Описание</h2>
+    <p>Хит сезона! Современный диван из натуральных материалов, с возможностью добавлений дополнительных секций,а также съемными боковыми деталями. Под высокими ножками с лёгкостью пройдёт робот пылесос. Купите сегодня и ощутите незабываемый комфорт.
+При покупке дивана "Питер", Вы получите 2000 бонусных рублей.</p>
+
+    <p>Цена: 45000 руб.</p>
+    <button id="buyButton">Купить</button>
+  </div>
+</div>
+
+<script>
+  const buyButton = document.getElementById('buyButton');
+  buyButton.addEventListener('click', () => {
+    // Здесь нужно добавить логику добавления товара в корзину.
+    //  В этом примере мы используем localStorage, но для реального магазина нужна серверная обработка.
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: "Кресло \"Комфорт\"", price: 5000, quantity: 1 });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert('Товар добавлен в корзину!');
+  });
+</script>
+
+</body>
+</html>
