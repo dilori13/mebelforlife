@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мебель для жизни</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-container {
+            display: flex;
+            max-width: 100%; 
+            margin: 20px 0; 
+        }
+
+        .sofa-image {
+            width: 60%;
+            height: auto;
+            border: none; 
+            margin-left: 50px;
+        }
+
+        .sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 10px;
+            margin-left: 20px; 
+            width: 35%;
+            margin-top: -275px; 
+        }
+
+        .section {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .color-buttons {
+            border: 1px solid #444; 
+            padding: 10px;
+            margin-left: 100px;
+            margin-right: 30px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px; 
+            margin-bottom: 20px;
+            justify-items: center;
+            width: 50%;
+        }
+
+        .color-button {
+            width: 45px;
+            height: 30px;
+            border-radius: 10px; 
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Мебель для жизни</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="color-buttons">
+        <button class="color-button" style="background-color: #FF0000;"></button>
+        <button class="color-button" style="background-color: #FF7F00;"></button>
+        <button class="color-button" style="background-color: #FFFF00;"></button>
+        <button class="color-button" style="background-color: #7FFF00;"></button>
+        <button class="color-button" style="background-color: #00FF00;"></button>
+        <button class="color-button" style="background-color: #00FF7F;"></button>
+        <button class="color-button" style="background-color: #00FFFF;"></button>
+        <button class="color-button" style="background-color: #007FFF;"></button>
+        <button class="color-button" style="background-color: #0000FF;"></button>
+        <button class="color-button" style="background-color: #7F00FF;"></button>
+        <button class="color-button" style="background-color: #FF00FF;"></button>
+        <button class="color-button" style="background-color: #FF007F;"></button>
+        <button class="color-button" style="background-color: #000000;"></button>
+        <button class="color-button" style="background-color: #808080;"></button>
+        <button class="color-button" style="background-color: #FFFFFF;"></button>
+        <button class="color-button" style="background-color: #FFC0CB;"></button>
+        <button class="color-button" style="background-color: #A52A2A;"></button>
+        <button class="color-button" style="background-color: #FFE4B5;"></button>
+        <button class="color-button" style="background-color: #FFD700;"></button>
+    </div>
+    
+    <main class="main-container">
+        <img class="sofa-image" src="img/divanDesign.jpg" alt="Диван">
+        <div class="sections">
+            <div class="section">
+                <h2>Диван</h2>
+                <button class="button">Выбрать класс бутон это ваш</button>
+            </div>
+            <div class="section">
+                <h2>Сидение</h2>
+                <button class="button">Выбрать класс бутон это ваш</button>
+            </div>
+            <div class="section">
+                <h2>Подлокотник</h2>
+                <button class="button">Выбрать класс бутон это ваш</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
